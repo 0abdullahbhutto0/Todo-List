@@ -24,8 +24,11 @@ Smooth hover animations that make notes "pop"
 ### Prerequisites
 
 PHP 7.0 or higher
+
 MySQL 5.6 or higher
+
 Apache web server
+
 Web browser
 
 Installation
