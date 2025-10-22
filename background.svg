@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+        <filter id="RoughPaperTexture" filterUnits="objectBoundingBox">
+            <feTurbulence type="fractalNoise" baseFrequency="128" numOctaves="1" result="texture"></feTurbulence>
+            <feDiffuseLighting in="texture" lighting-color="#EED0A8" surfaceScale="1" result="diffLight">
+                <feDistantLight azimuth="45" elevation="55"></feDistantLight>
+            </feDiffuseLighting>
+            <feComposite operator="arithmetic" k1="1.2" k2="0" k3="0" k4="0" in="diffLight" in2="SourceGraphic" result="out"></feComposite>
+        </filter>
+        <filter id="PencilTexture" x="-2%" y="-2%" width="104%" height="104%">
+            <feTurbulence type="fractalNoise" baseFrequency="1.5" numOctaves="3" seed="10" result="noise"></feTurbulence>
+            <feDisplacementMap in="SourceGraphic" in2="noise" xChannelSelector="R" yChannelSelector="G" scale="4" result="wobble"></feDisplacementMap>
+        </filter>
+        <pattern id="DoodlePattern" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" width="60" height="60">
+            <path d="M 10 30 L 20 40 L 40 20" stroke="#866C53" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#PencilTexture)"></path>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="#EED0A8" filter="url(#RoughPaperTexture)"></rect>
+    <rect width="100%" height="100%" fill="url(#DoodlePattern)"></rect>
+</svg>
