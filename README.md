@@ -32,8 +32,8 @@ Installation
 
 Clone the repository
 
-bash   git clone https://github.com/yourusername/comic-todo-app.git
-   cd comic-todo-app
+bash   git clone https://github.com/0abdullahbhutto0/Todo-List.git
+   cd Todo-List
 
 Set up the database
 
