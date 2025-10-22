@@ -31,7 +31,7 @@ Apache web server
 
 Web browser
 
-Installation
+### Installation
 
 Clone the repository
 
