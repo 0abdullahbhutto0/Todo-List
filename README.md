@@ -25,7 +25,7 @@ Smooth hover animations that make notes "pop"
 
 PHP 7.0 or higher
 MySQL 5.6 or higher
-Apache/Nginx web server
+Apache web server
 Web browser
 
 Installation
@@ -33,6 +33,7 @@ Installation
 Clone the repository
 
 bash   git clone https://github.com/0abdullahbhutto0/Todo-List.git
+   
    cd Todo-List
 
 Set up the database
